@@ -45,41 +45,55 @@
     </header>
 
     <Main>
-        <section class="container">
-            <div class="row">
+        <section class="container py-4">
                 <h2>Nuovo Libro</h2>   
-                <form action=""></form>
+                <form>
                     <div class="row">
-                        <div class="col-6">
-                            <label for="formGroupExampleInput" class="form-label">Nome Autore</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inserisci il nome dell'autore">
+                        <div class="col-6 my-2">
+                            <label for="nome-autore" class="form-label">Nome Autore</label>
+                            <input type="text" class="form-control" id="nome-autore" placeholder="Inserisci il nome dell'autore">
                         </div>
-                        <div class="col-6">
-                            <label for="formGroupExampleInput" class="form-label">Cognome Autore</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                        <div class="col-6 my-2">
+                            <label for="cognome-autore" class="form-label">Cognome Autore</label>
+                            <input type="text" class="form-control" id="cognome-autore" placeholder="Inserisci il cognome dell'autore">
                         </div>
-                        <div class="col-12">
-                            <label for="formGroupExampleInput" class="form-label">Titolo</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                        <div class="col-12 my-2">
+                            <label for="titolo-libro" class="form-label">Titolo</label>
+                            <input type="text" class="form-control" id="titolo-libro" placeholder="Inserisci il titolo del libro">
+                            <span class="text-secondary fs-6">Titolo versione italiana</span>
                         </div>
-                        <div class="col-12">
-                            Genere
+                        <div class="col-12 my-2">
+                            <label for="genere" class="form-label">Genere</label>
+                            <select class="form-select" aria-label="seleziona-genere">
+                                <option selected>Scegli il genere</option>
+                                <option value="1">Fantasy</option>
+                                <option value="2">Giallo</option>
+                                <option value="3">Horror</option>
+                              </select>
                         </div>
-                        <div class="col-12">
-                            Anno di pubblicazione
+                        <div class="col-12 my-2">
+                            <label for="anno" class="form-label">Anno di pubblicazione</label>
+                            <input type="text" class="form-control" id="anno" placeholder="Inserisci l'anno">
                         </div>
-                        <div class="col-12">
-                            ISBN#
+                        <div class="col-12 my-2">
+                            <label for="anno" class="form-label">ISBN#</label>
+                            <input type="number" class="form-control" id="anno" placeholder="Inserisci il codice ISBN#">
                         </div>
-                        <hr>
-                        <div class="col-12">
-                            Note
+
+                        <hr class="my-4">
+
+                        <div class="col-12 my-2">
+                                <label for="note" class="form-label">Note</label>
+                                <textarea class="form-control" id="note" placeholder="Inserisci eventuali note sul libro" rows="3"></textarea>
                         </div>
-                        <div class="col-12">
-                            
+                        <div class="col-12 my-2">
+                            <input class="form-check-input" type="checkbox" id="checkbox"></input>
+                            <label class="form-check-label" for="checkbox">
+                                Disponibile anche in digitale
+                            </label>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                    <button type="button" class="btn btn-primary my-2">Aggiungi Libro</button>
                 </form>
             </div>
         </section>
