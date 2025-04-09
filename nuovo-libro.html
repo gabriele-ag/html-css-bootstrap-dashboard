@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/duck.png" alt="logo" width="50" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anagrafica Utenti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Storico Prestiti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Help</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 bg-light text-dark" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <Main>
+        <section class="container">
+            <div class="row">
+                <h2>Nuovo Libro</h2>   
+                <form action=""></form>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="formGroupExampleInput" class="form-label">Nome Autore</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inserisci il nome dell'autore">
+                        </div>
+                        <div class="col-6">
+                            <label for="formGroupExampleInput" class="form-label">Cognome Autore</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                        </div>
+                        <div class="col-12">
+                            <label for="formGroupExampleInput" class="form-label">Titolo</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                        </div>
+                        <div class="col-12">
+                            Genere
+                        </div>
+                        <div class="col-12">
+                            Anno di pubblicazione
+                        </div>
+                        <div class="col-12">
+                            ISBN#
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            Note
+                        </div>
+                        <div class="col-12">
+                            
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                </form>
+            </div>
+        </section>
+    </Main>
+
+</body>
